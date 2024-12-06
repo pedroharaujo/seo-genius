@@ -1,0 +1,30 @@
+@import url('./variables.css');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    color: var(--color-text);
+    /* background-color: var(--color-background); */
+    line-height: 1.6;
+}
+
+.nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    --bs-navbar-nav-link-padding-x: 1rem;
+}
+
+.nav-link:hover {
+    color: var(--bs-primary);
+    font-weight: 500;
+}
+
+.sign-up {
+    font-weight: 500;
+}

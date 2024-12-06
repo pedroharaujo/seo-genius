@@ -1,0 +1,10 @@
+:root {
+    --color-primary: #4A90E2;
+    --color-secondary: #A896D8;
+    --color-background: #F3F8FE;
+    --color-accent: #6B4E9B;
+    --color-text: #2C2C2C;
+    --color-text-muted: #757575;
+
+    --bs-navbar-nav-link-padding-x: 1rem;
+}
