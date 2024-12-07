@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #4A90E2;
+    --color-primary: #012970;
     --color-secondary: #A896D8;
     --color-background: #F3F8FE;
     --color-accent: #6B4E9B;
@@ -7,4 +7,12 @@
     --color-text-muted: #757575;
 
     --bs-navbar-nav-link-padding-x: 1rem;
+
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #212529;
+    --nav-dropdown-hover-color: #4154f1;
+
+    --heading-font: "Nunito", sans-serif;
+    --contrast-color: #fff;
 }
