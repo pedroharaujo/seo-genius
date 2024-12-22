@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends 'main_pages/clean_base.html' %}
+
+{% load static %}
+
+{% block body_block %}
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card p-4 shadow-sm" style="width: 100%; max-width: 400px;">
+        <h2 class="text-center mb-4">Sign Up</h2>
+
+        <div class="d-grid gap-3">
+            <!-- Google Sign Up -->
+            <a href="#" class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/google-icon.svg' %}" alt="Google Icon"
+                    style="width: 20px; margin-right: 10px;">
+                Sign Up with Google
+            </a>
+
+            <!-- Facebook Sign Up -->
+            <a href="#" class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-center">
+                <img src="{% static 'img/facebook-icon.svg' %}" alt="Facebook Icon"
+                    style="width: 20px; margin-right: 10px;">
+                Sign Up with Facebook
+            </a>
+        </div>
+
+        <hr class="my-4">
+        <p class="text-center">
+            Already have an account? <a href="{% url 'main_pages:login' %}">Log In</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

@@ -11,5 +11,13 @@ class HomeView(TemplateView):
         return context
 
 
+def signup(request):
+    return render(request, 'main_pages/signup.html')
+
+
+def login(request):
+    return render(request, 'main_pages/login.html')
+
+
 def terms_and_conditions(request):
     return render(request, 'main_pages/terms_and_conditions.html')
