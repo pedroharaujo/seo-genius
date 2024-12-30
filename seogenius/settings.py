@@ -38,7 +38,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-SITE_ID = 1
+SITE_ID = 2
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -63,12 +63,7 @@ SOCIALACCOUNT_PROVIDERS = {
         ],
         'AUTH_PARAMS': {
             'access_type': 'online',
-        },
-        'APP': {
-            'client_id': '328978038084-5acfagnrvspicv1r8gqp29nqlqdq6frb.apps.googleusercontent.com',
-            'secret': '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',
-            'key': '',
-        },
+        }
     }
 }
 
@@ -165,7 +160,5 @@ AUTHENTICATION_BACKENDS = (
 SOCIALACCOUNT_LOGIN_ON_GET = True
 SOCIALACCOUNT_AUTO_SIGNUP = True
 
-LOGIN_REDIRECT_URL = '/users/dashboard/'
-LOGOUT_REDIRECT_URL = "/"
-
-ACCOUNT_SIGNUP_REDIRECT_URL = '/users/dashboard/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
