@@ -56,13 +56,22 @@ INSTALLED_APPS = [
 ]
 
 SOCIALACCOUNT_PROVIDERS = {
-    "google": {
-        "SCOPE": [
-            "profile", "email"
+    'google': {
+        'SCOPE': [
+            'email',
+            'profile',
         ],
-        "AUTH_PARAMS": {"access_type": "online"}
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'APP': {
+            'client_id': '328978038084-5acfagnrvspicv1r8gqp29nqlqdq6frb.apps.googleusercontent.com',
+            'secret': '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',
+            'key': '',
+        },
     }
 }
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -150,8 +159,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",
-    "allauth.accounts.auth_backends.AuthenticationBackend"
+    "allauth.account.auth_backends.AuthenticationBackend"
 )
 
-LOGIN_REDIRECT_URL = "/"
+SOCIALACCOUNT_LOGIN_ON_GET = True
+SOCIALACCOUNT_AUTO_SIGNUP = True
+
+LOGIN_REDIRECT_URL = '/users/dashboard/'
 LOGOUT_REDIRECT_URL = "/"
+
+ACCOUNT_SIGNUP_REDIRECT_URL = '/users/dashboard/'

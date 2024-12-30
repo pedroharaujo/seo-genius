@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.views.generic import View, TemplateView, ListView, DetailView
-# Create your views here.
 
 
 class HomeView(TemplateView):
@@ -9,14 +8,6 @@ class HomeView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)
         return context
-
-
-def signup(request):
-    return render(request, 'main_pages/signup.html')
-
-
-def login(request):
-    return render(request, 'main_pages/login.html')
 
 
 def terms_and_conditions(request):
