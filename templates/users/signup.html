@@ -7,28 +7,32 @@
 {% block body_block %}
 <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div class="card p-4 shadow-sm" style="width: 100%; max-width: 400px;">
-        <h2 class="text-center mb-4">Sign Up</h2>
+        <h2 class="text-center mb-4" style="font-size: 1.4rem;">Sign in to SEO Genius</h2>
 
         <div class="d-grid gap-3">
-            <!-- Google Sign Up -->
+            <!-- Google Sign In Button -->
             <a href="{% provider_login_url 'google' %}"
-                class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-center">
-                <img src="{% static 'img/google-icon.svg' %}" alt="Google Icon"
-                    style="width: 20px; margin-right: 10px;">
-                Sign Up with Google
+                class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-center google-btn"
+                style="height: 40px; padding-right: 40px;">
+                <img src="{% static 'img/google-logo.svg' %}" alt="Google Logo" class="google-logo">
+                <span class="google-btn-text">Continue with Google</span>
             </a>
 
+
             <!-- Facebook Sign Up -->
-            <a href="#" class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-center">
-                <img src="{% static 'img/facebook-icon.svg' %}" alt="Facebook Icon"
+            <a href="{% provider_login_url 'google' %}"
+                class="btn btn-outline-primary btn-lg d-flex align-items-center justify-content-center google-btn"
+                style="height: 40px; padding-right: 40px;">
+                <img src=" {% static 'img/facebook-logo.svg' %}" alt="Facebook Logo"
                     style="width: 20px; margin-right: 10px;">
-                Sign Up with Facebook
+                <span class="google-btn-text">Continue with Facebook</span>
             </a>
         </div>
 
         <hr class="my-4">
         <p class="text-center">
-            Already have an account? <a href="{% url 'users:login' %}">Log In</a>
+            Need help?
+            <a href="#">Contact Support</a>
         </p>
     </div>
 </div>
