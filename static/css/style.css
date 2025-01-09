@@ -235,9 +235,9 @@ height: 100%;
     padding-left: 0.1rem !important;
 }
 
-/* .cards-container {
-    justify-content: center;
-} */
+.cards-container {
+    justify-content: space-between;
+}
 
 .card-box {
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -245,7 +245,7 @@ height: 100%;
     padding: 2rem;
     margin-right: 1rem;
     text-align: center;
-    width: 30% !important;
+    width: 32% !important;
     transition: 0.3s;
     border-radius: 5px;
     border-bottom: 3px solid var(--bs-primary);
