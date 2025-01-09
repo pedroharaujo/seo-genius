@@ -160,5 +160,11 @@ AUTHENTICATION_BACKENDS = (
 SOCIALACCOUNT_LOGIN_ON_GET = True
 SOCIALACCOUNT_AUTO_SIGNUP = True
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/users/signup/'
+LOGIN_REDIRECT_URL = '/users/dashboard/'
 LOGOUT_REDIRECT_URL = '/'
+
+ACCOUNT_AUTHENTICATION_METHOD = "email"  # Use email-based login
+ACCOUNT_USERNAME_REQUIRED = False        # Disable username requirement
+ACCOUNT_EMAIL_REQUIRED = True            # Require email for login
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
